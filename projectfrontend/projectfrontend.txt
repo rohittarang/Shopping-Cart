@@ -1,0 +1,32 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import App from "./App";
+
+import Home from "./core/Home"
+
+root.render(
+    <React.StrictMode>
+      <Home />
+    </React.StrictMode>
+  );
+
+  function SrcRoutes() {
+    return (
+        <BrowserRouter>
+             <Routes>
+                 <Route path="/" exact component={Home} />
+             </Routes>
+         </BrowserRouter>
+    );
+  }
+// const SrcRoutes = () => {
+//     return (
+//         <BrowserRouter>
+//             <Routes>
+//                 <Route path="/" exact component={Home} />
+//             </Routes>
+//         </BrowserRouter>
+//     );
+// };
+
+export default SrcRoutes;
